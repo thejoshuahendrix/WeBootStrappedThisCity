@@ -19,32 +19,29 @@ class PostList extends Component {
       //CSS transition for list group items so they fade
       <CSSTransition key={_id} timeout={500} classNames="fade">
         <ListGroupItem>
-          <h2 style={{backgroundColor:"#F1F1F1" , padding:'10px'}}>{title}</h2>
+          <h2 style={{ backgroundColor: "#F1F1F1", padding: "10px" }}>
+            {title}
+          </h2>
           <Button
-            className="remove-btn"
+            className="remove-btn float-right"
             color="danger"
             size="sm"
-            style={{float:'right'}}
             onClick={this.onDeleteClick.bind(this, _id)}
           >
             &times;
           </Button>
-          <h6 style={{float:'right', marginRight:"30px"}}>{name}</h6>
+          <h6 style={{ float: "right", marginRight: "30px" }}>{name}</h6>
           <div className="wrapper" style={{ marginLeft: "50px" }}>
-          
-            <h6 >{message}</h6>
+            <h6>{message}</h6>
             {new Date(date).toLocaleDateString()}
           </div>
-          
         </ListGroupItem>
       </CSSTransition>
-    ))
+    ));
     return (
-      <Container >
-        <ListGroup style={{boxShadow:"5px 5px 5px 5px rgba(0, 0, 0, .2)"}}>
-          <TransitionGroup className="shopping-list">
-            {posts}
-          </TransitionGroup>
+      <Container>
+        <ListGroup style={{ boxShadow: "5px 5px 5px 5px rgba(0, 0, 0, .2)" }}>
+          <TransitionGroup className="shopping-list">{posts}</TransitionGroup>
         </ListGroup>
       </Container>
     );

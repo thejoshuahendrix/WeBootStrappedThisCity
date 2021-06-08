@@ -78,10 +78,10 @@ class ItemModal extends Component {
                             onChange={this.onChange}>
                             </Input>
                             <Input
-                            type="text"
+                            type="textarea"
                             name="message"
                             id="item"
-                            placeholder="Add message"
+                            placeholder="Add a detailed message"
                             onChange={this.onChange}>
                             </Input>
                             <Button
