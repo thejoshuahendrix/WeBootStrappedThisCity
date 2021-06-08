@@ -17,8 +17,9 @@ WeBootStrappedThisCity is a MERN stack application
 
 
 ##How to use
-You must utilize MongoDBAtlas and have your own API key, importing that API key into server.js, I used the path ./config/keys
-`<addr>`module.exports  = {
+You must utilize MongoDBAtlas and have your own API key, importing that API key into server.js, I used the path ./config/keys and code something like this.
+
+`module.exports  = {
     mongoURI: "mongodb+srv://yourusername:password@yourmongodbURL"
 };
-`</addr>`
+`
