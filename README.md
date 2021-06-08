@@ -24,7 +24,8 @@ I used the path ./config/keys and code something like this.
 
 
 
-` module.exports  = {
+```javascript
+module.exports  = {
     mongoURI: "mongodb+srv://yourusername:password@yourmongodbURL"
 };
 `
