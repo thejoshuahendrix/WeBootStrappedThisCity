@@ -28,6 +28,6 @@ I used the path ./config/keys and code something like this.
 module.exports  = {
     mongoURI: "mongodb+srv://yourusername:password@yourmongodbURL"
 };
-`
+```
 
 After getting your MongoDB setup you can simply run: `npm run dev`
