@@ -14,3 +14,11 @@ WeBootStrappedThisCity is a MERN stack application
 ## When you click the Add Item Button
 
 ![Modal Page](https://github.com/thejoshuahendrix/WeBootStrappedThisCity/blob/main/images/webootstrappedthiscty3.PNG?raw=true)
+
+
+##How to use
+You must utilize MongoDBAtlas and have your own API key, importing that API key into server.js, I used the path ./config/keys
+`<addr>`module.exports  = {
+    mongoURI: "mongodb+srv://yourusername:password@yourmongodbURL"
+};
+`</addr>`
